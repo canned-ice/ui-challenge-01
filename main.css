@@ -18,7 +18,7 @@ img, video, canvas {
   background-color: blueviolet;
   height: 150px;
   width: 100%;
-  line-height: 75px;
+  line-height: 150px;
 }
 
 .c {
@@ -80,7 +80,6 @@ footer {
 @media only screen and (min-width: 768px) {
   * {
     box-sizing: border-box;
-    width: 100%;
     max-width: 960px;
     margin: 0;
   }
@@ -90,18 +89,6 @@ footer {
     height: 100px;
     margin: 0 auto;
     line-height: 100px;
-  }
-
-  main {
-    width: 100%;
-    position: relative;
-    margin: 0 auto;
-    max-width: 960px;
-  }
-
-  body {
-    width: 100%;
-    max-width: 960px;
   }
 
   .bcdefgh {

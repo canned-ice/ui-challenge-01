@@ -1,8 +1,4 @@
 /* @media Rule 480-768 */
-@viewport {
-  width: device-width;
-  zoom: 1;
-}
 
 img, video, canvas {
   max-width: 100%;
@@ -11,68 +7,147 @@ img, video, canvas {
 .a {
   background-color: violet;
   height: 75px;
+  width: 100%;
 }
 
 .b {
   background-color: blueviolet;
   height: 150px;
+  width: 100%;
 }
 
 .c {
   background-color: gold;
   height: 125px;
+  width: 100%;
 }
 
 .d {
   background-color: orangered;
   height: 125px;
+  width: 100%;
 }
 
 .e {
   background-color: green;
   height: 250px;
   width: 50%;
-  float: right;
+  float: left;
 }
 
 .f {
   background-color: aquamarine;
   height: 250px;
   width: 50%;
+  float: right;
 }
 
 .g {
   background-color: teal;
   height: 250px;
   width: 50%;
-  float: right;
+  float: left;
 }
 
 .h {
   background-color: aqua;
   height: 250px;
   width: 50%;
+  float: right;
 }
 
 footer {
   background-color: magenta;
   height: 80px;
+  display: block;
+  clear: right;
+  width: 100%;
 }
 
-/* @media Rule 768-960 */
-@media all and (min-width: 769px) and (max-width: 960px) {
-  .ab {
-    position: relative;
+/* @media Rule 768-960 PROBLEM@1150*/ 
+@media only screen and (min-width: 768px) {
+  * {
+    box-sizing: border-box;
     width: 100%;
+    max-width: 960px;
+    margin: 0;
+  }
+
+  .a {
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+  body {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .bcdefgh {
+    width: 100%;
+    max-width: 960px;
+  }
+
+  .b {
+    height: 600px;
+    float: left;
+    width: 20%;
   }
 
   .cd {
-    position: relative;
     width: 100%;
+  }
+  .c {
+    width: 40%;
+    float: left;
+    height: 200px;
+    clear: right;
+  }
+  .d {
+    width: 40%;
+    float: left;
+    height: 200px;
+    clear: right;
   }
 
   .efgh {
-    position: relative;
     width: 100%;
+  }
+  .e {
+    width: 20%;
+    height: 250px;
+    clear: right;
+  }
+  .f {
+    width: 20%;
+    height: 250px;
+    float: left;
+    clear: right;
+  }
+  .g {
+    width: 20%;
+    height: 250px;
+    float: left;
+    clear: right;
+  }
+  .h {
+    width: 20%;
+    height: 250px;
+    float: left;
+    clear: right;
+  }
+  footer {
+    width: 80%;
+    height: 150px;
+    float: left;
+    max-width: 760px;
   }
 }

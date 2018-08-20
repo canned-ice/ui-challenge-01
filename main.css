@@ -1,0 +1,78 @@
+/* @media Rule 480-768 */
+@viewport {
+  width: device-width;
+  zoom: 1;
+}
+
+img, video, canvas {
+  max-width: 100%;
+}
+
+.a {
+  background-color: violet;
+  height: 75px;
+}
+
+.b {
+  background-color: blueviolet;
+  height: 150px;
+}
+
+.c {
+  background-color: gold;
+  height: 125px;
+}
+
+.d {
+  background-color: orangered;
+  height: 125px;
+}
+
+.e {
+  background-color: green;
+  height: 250px;
+  width: 50%;
+  float: right;
+}
+
+.f {
+  background-color: aquamarine;
+  height: 250px;
+  width: 50%;
+}
+
+.g {
+  background-color: teal;
+  height: 250px;
+  width: 50%;
+  float: right;
+}
+
+.h {
+  background-color: aqua;
+  height: 250px;
+  width: 50%;
+}
+
+footer {
+  background-color: magenta;
+  height: 80px;
+}
+
+/* @media Rule 768-960 */
+@media all and (min-width: 769px) and (max-width: 960px) {
+  .ab {
+    position: relative;
+    width: 100%;
+  }
+
+  .cd {
+    position: relative;
+    width: 100%;
+  }
+
+  .efgh {
+    position: relative;
+    width: 100%;
+  }
+}
